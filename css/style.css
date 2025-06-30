@@ -29,16 +29,12 @@
        border: 2px white solid;
    }
 
-   nav ul {
-       list-style-type: none;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       gap: 60px;
-   }
+.navbar .icon{
+    display: none;
+}
 
 
-   nav a {
+   .navbar a {
        color: white;
        padding: 0.5rem;
        display: inline-block;
@@ -46,7 +42,7 @@
        font-weight: bold;
    }
 
-   nav ul li a:hover {
+   .navbar a:hover {
        background: #213C4E;
    }
    body{
@@ -125,16 +121,6 @@
     text-align: center;
    }
 
-
-
-
-
-
-   @media screen and (max-width:768px) {
-    .intro{
-         font-size: 20px;
-    }
-   }  
      /*contact*/
 
    .contact-section {
@@ -202,3 +188,48 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+ @media screen and (max-width:768px) {
+    .intro{
+         font-size: 20px;
+    }
+   
+    }
+    .heading-content h3{
+        font-size: 2rem;
+    }
+    .heading-content h4 {
+        font-size: 1rem;
+
+    }
+    
+    .logo img{
+        width: 100px;
+        height: 105px;
+        object-fit: contain;
+    }
+ 
+
+   @media screen and (max-width:600px) {
+    /* navbar responsive */
+    .navbar a:not(:first-child){
+        display: none;
+    }
+
+    .navbar a.icon{
+        display: block;
+        float: right;
+    }
+
+    .navbar.responsive{
+        position: relative;
+    }
+    .navbar.responsive .icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .navbar.responsive a{
+        display: block;
+    }
+   }
