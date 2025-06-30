@@ -1,0 +1,141 @@
+   * {
+       font-family: cursive;
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+   }
+   header{
+      background-color: #280086;
+;
+   }
+   .heading-content{
+    color: #FFF5B9;
+    
+   }
+   
+   .heading {
+       display: flex;
+       
+   }
+   
+   .logo,
+   .heading-content {
+       flex: 1 1 200px;
+      
+   }
+   .sidelogo{
+    float: right;
+
+   }
+
+
+   nav {
+       background: #182241;
+       border: 2px white solid;
+   }
+
+   nav ul {
+       list-style-type: none;
+       display: flex;
+       align-items: center;
+   }
+
+
+   nav a {
+       color: white;
+       padding: 0.5rem;
+       display: inline-block;
+       text-decoration: none;
+       font-weight: bold;
+   }
+
+   nav ul li a:hover {
+       background: #213C4E;
+   }
+   body{
+    background-color: #FFF5B9;
+   }
+   .introduction{
+    padding: 1rem;
+   }
+
+   .intro {
+       color: #FFF5B9;
+       font-size: 50px;
+       text-align: left;
+       justify-content: left;
+       background-image: url(../img/bgg.jpg);
+       background-size: cover;
+   }
+
+   .parent{
+    padding: 2rem 0;
+   }
+
+   section {
+       padding: 2em;
+   }
+   .Dishestitle h2{
+    padding: 2rem;
+    text-align: center;
+
+   }
+
+/* services */
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.services-item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    align-content: center;
+    
+}
+.ourbestsellin{
+    ima
+}
+/* services */
+   footer {
+       background-color: #280086;
+       color: white;
+       text-align: center;
+       padding: 3rem;
+       
+   }
+ .footer-container ul {
+       list-style-type: none;
+       display: flex;
+       align-items: center;
+       align-content: center;
+       justify-content: center;
+      
+    
+    }
+ footer a {
+       color: white;
+       padding: 0.5rem;
+       display: inline-block;
+       text-decoration: none;
+       font-weight: bold;
+   }
+   
+   
+   /* category */
+   .category{
+    text-align: center;
+   }
+
+
+
+
+
+
+   @media screen and (max-width:768px) {
+    .intro{
+         font-size: 20px;
+    }
+   }
+  
